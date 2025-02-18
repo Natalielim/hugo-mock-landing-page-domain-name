@@ -1,61 +1,107 @@
 .home {
-    --bd-purple: #4c0bce;
-    --bd-violet: #712cf9;
-    --bd-accent: #ffe484;
-    --bd-violet-rgb: 112.520718,44.062154,249.437846;
-    --bd-accent-rgb: 255,228,132;
-    --bd-pink-rgb: 214,51,132;
+    --bd-dark-red: #850000;
+    --bd-light-red: #a80000;
+    --bd-accent: #ffffff;
+    --bd-dark-red-rgb: 133, 0, 0;
+    --bd-accent-rgb: 255, 255, 255;
+    --bs-body-bg-rgb: 0, 0, 0;
 
     .bd-masthead {
-        padding: 3rem 0;
-        background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
+        padding: 5rem 0;
+        background: linear-gradient(180deg,
+                    rgba(var(--bd-dark-red-rgb), 0.98),
+                    rgba(0, 0, 0, 0.98) 100%); // Red to black gradient
+        // background: linear-gradient(180deg,
+        //         rgba(0, 0, 0, 0.95),
+        //         rgba(var(--bd-dark-red-rgb), 0.1) 85%);
+        color: white;
     }
 
     .btn-bd-primary {
         --bs-btn-font-weight: 600;
         --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet);
-        --bs-btn-border-color: var(--bd-violet);
-        --bs-btn-border-radius: .5rem;
+        --bs-btn-bg: var(--bd-dark-red); 
+        --bs-btn-border-color: var(--bd-dark-red);
+        --bs-btn-border-radius: 2rem;
+        --bs-btn-padding-x: 2rem;
+        --bs-btn-padding-y: 0.75rem;
         --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
+        --bs-btn-hover-bg: var(--bd-light-red);
+        --bs-btn-hover-border-color: var(--bd-light-red);
+        --bs-btn-active-color: var(--bs-white);
+        --bs-btn-active-bg: var(--bd-light-red);
+        --bs-btn-active-border-color: var(--bd-light-red);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
     }
 }
 
 .navbar {
     @extend .navbar-dark;
+    padding: 1.5rem 0;
+    background: linear-gradient(180deg,
+             rgba(var(--bd-dark-red-rgb), 0.98),
+            var(--bd-dark-red-rgb) 100%); // Red to black gradient
+    border-bottom: 1px solid rgba(var(--bd-dark-red-rgb), 0.3);
+}
 
-    --bd-violet-rgb: 112.520718,44.062154,249.437846;
-    
-    padding: .75rem 0;
-    background-color: transparent;
-    background-image: linear-gradient(to bottom, rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15);
+h1,
+h2,
+h3 {
+    font-family: 'Times New Roman', serif;
+    font-weight: 300;
+    letter-spacing: -0.02em;
 }
 
 .text-violet {
-    color: #6528e0;
+    color: var(--bd-dark-red); // Change to red
 }
 
 .list {
     .card {
-        transition: transform 0.2s ease-in-out;
+        background: rgba(var(--bd-dark-red-rgb), 0.05);
+        border: 1px solid rgba(var(--bd-dark-red-rgb), 0.1);
+        transition: all 0.3s ease;
 
         &:hover {
-            transform: scale(1.01);
+            transform: translateY(-2px);
+            background: rgba(var(--bd-dark-red-rgb), 0.08);
+            border-color: rgba(var(--bd-dark-red-rgb), 0.2);
         }
     }
 }
 
-.navbar-brand {
-    transition: transform 0.2s ease-in-out;
+body {
+    background-color: black;
+    color: white;
+}
+
+a {
+    color: var(--bd-light-red);
+    transition: all 0.2s ease;
 
     &:hover {
-        transform: rotate(-2deg) scale(1.1);
+        color: var(--bd-dark-red);
+    }
+}
+
+// Add subtle red accents
+.section-divider {
+    border-bottom: 1px solid rgba(var(--bd-dark-red-rgb), 0.2);
+}
+
+// Add red glow effect for highlights
+.highlight {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at center, rgba(var(--bd-dark-red-rgb), 0.1) 0%, transparent 70%);
+        pointer-events: none;
     }
 }
