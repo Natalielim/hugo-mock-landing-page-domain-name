@@ -8,12 +8,12 @@
 
     .bd-masthead {
         padding: 5rem 0;
-        background: linear-gradient(180deg,
-                    rgba(var(--bd-dark-red-rgb), 0.98),
-                    rgba(0, 0, 0, 0.98) 100%); // Red to black gradient
         // background: linear-gradient(180deg,
-        //         rgba(0, 0, 0, 0.95),
-        //         rgba(var(--bd-dark-red-rgb), 0.1) 85%);
+        //             rgba(var(--bd-dark-red-rgb), 0.98),
+        //             rgba(0, 0, 0, 0.98) 100%); // Red to black gradient
+        background: linear-gradient(180deg,
+                rgba(0, 0, 0, 0.95),
+                rgba(var(--bd-dark-red-rgb), 0.1) 85%);
         color: white;
     }
 
