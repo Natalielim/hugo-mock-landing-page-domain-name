@@ -36,6 +36,16 @@
     }
 }
 
+.container,
+.container-fluid {
+    background: none;
+}
+
+.hero-section {
+    background: none; // Remove blue background
+    margin: 4rem 0; // Add more margin top and bottom
+}
+
 .navbar {
     @extend .navbar-dark;
     padding: 1.5rem 0;
@@ -104,4 +114,33 @@ a {
         background: radial-gradient(circle at center, rgba(var(--bd-dark-red-rgb), 0.1) 0%, transparent 70%);
         pointer-events: none;
     }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2rem 0;
+
+    // Style links in footer
+    a {
+        color: var(--bd-light-red);
+
+        &:hover {
+            color: var(--bd-dark-red);
+            text-decoration: none;
+        }
+    }
+
+    // Style footer headings if any
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+
+    // Add subtle border at top of footer
+    border-top: 1px solid rgba(var(--bd-dark-red-rgb), 0.2);
 }
