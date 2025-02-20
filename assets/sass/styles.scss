@@ -42,8 +42,8 @@
 }
 
 .hero-section {
-    background: none; // Remove blue background
-    margin: 4rem 0; // Add more margin top and bottom
+    background: none; 
+    margin: 4rem 0; 
 }
 
 .navbar {
@@ -58,9 +58,9 @@
 h1,
 h2,
 h3 {
-    font-family: 'Times New Roman', serif;
-    font-weight: 300;
-    letter-spacing: -0.02em;
+    font-family: 'New Century Schoolbook', serif;
+    font-weight: 500;
+    // letter-spacing: -0.02em;
 }
 
 .text-violet {
@@ -82,8 +82,10 @@ h3 {
 }
 
 body {
-    background-color: black;
-    color: white;
+    background: black;
+    min-height: 100vh;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #ffffff;
 }
 
 a {
@@ -117,7 +119,7 @@ a {
 }
 
 footer {
-    background-color: black;
+    background: #000000 !important;
     color: white;
     padding: 2rem 0;
 
@@ -143,4 +145,23 @@ footer {
 
     // Add subtle border at top of footer
     border-top: 1px solid rgba(var(--bd-dark-red-rgb), 0.2);
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+    font-family: "New Century Schoolbook", "Century Schoolbook", Georgia, serif;
+}
+
+// Keep content sections transparent
+main, .container, .container-fluid, .row, .col, .card {
+    background: transparent !important;
+}
+
+// Keep navbar and footer styles
+.navbar {
+    background: #000000 !important;
+}
+
+footer {
+    background: #000000 !important;
 }

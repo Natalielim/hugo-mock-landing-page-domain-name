@@ -1,5 +1,5 @@
 ---
-title: "Stitched Social Featured in Times of India"
+title: "Stitched Social Times of India Feature"
 date: 2025-02-19
 authors: ["Natalie Lim"]
 description: "Silicon Valley's New Matchmakers Are Betting on AI to Fix What Dating Apps Broke reads the Times of India, India’s most-read English newspaper and the World’s largest-selling English newspaper"
@@ -67,4 +67,4 @@ intriguing alternative. It's not just about finding a match; it's about finding 
 context, with the support of AI that actually improves with each success story.
 
 Read more at:
-http://timesofindia.indiatimes.com/articleshow/118353322.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst
+<http://timesofindia.indiatimes.com/articleshow/118353322.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst>

@@ -2,7 +2,7 @@
 title: "Stitched Social Launches in SF"
 date: 2025-02-01
 authors: ["Natalie Lim"]
-description: "On the evening of January 31st, the heart of San Francisco's stylish Nob Hill district was buzzing with excitement as one hundred elite attendees gathered at a chic cocktail bar to celebrate the launch of Stitched Social, the city’s newest matchmaking service."
+description: "On the eve of January 31st, SF's Nob Hill district buzzed with excitement as 100 elite attendees gathered at Persona cocktail bar to celebrate the launch of Stitched Social, the city’s newest matchmaking service."
 image: "images/IMG_8182.jpeg"
 draft: false
 ---
