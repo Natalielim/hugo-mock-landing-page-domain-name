@@ -118,19 +118,17 @@ a {
     }
 }
 
-// Footer styling with comprehensive text handling
 footer, 
 .footer {
   background-color: #000000 !important;
-  color: #ffffff !important;
   
-  p, span, div {
+  p, 
+  .text-muted {
     color: #ffffff !important;
+    margin-bottom: 0;
   }
   
-  a, 
-  .nav-link,
-  .text-muted {
+  a {
     color: #ffffff !important;
     text-decoration: none;
     
@@ -138,13 +136,6 @@ footer,
       color: #cccccc !important;
       text-decoration: underline;
     }
-  }
-  
-  // Override any Bootstrap text utilities
-  .text-dark,
-  .text-body,
-  .text-muted {
-    color: #ffffff !important;
   }
 }
 
