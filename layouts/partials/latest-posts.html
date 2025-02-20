@@ -4,6 +4,9 @@
         <div class="col">
 
             <div class="card h-100 bg-dark text-white border-secondary">
+                {{ with .Params.image }}
+                    <img src="{{ . | relURL }}" class="card-img-top" alt="Post image" style="height: 200px; object-fit: cover;">
+                {{ end }}
                 <div class="card-body">
                     <h4 class="card-title">
                         <a class="stretched-link text-white text-decoration-none" href="{{ .RelPermalink }}">
