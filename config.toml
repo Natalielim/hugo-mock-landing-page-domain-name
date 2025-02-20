@@ -24,10 +24,11 @@ enableEmoji = true
   lastmod = ["lastmod", ":fileModTime", ":default"]
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
-  series = 'series'
-  author = "authors"
+  # comment out unused taxonomies
+  # tag = "tags"
+  # series = "series"
+  # category = "categories"
+  # author = "authors"
 
 [sitemap]
   changefreq = "weekly"
@@ -48,3 +49,13 @@ enableEmoji = true
   [[module.mounts]]
     source = "static"
     target = "static"
+
+# Disable RSS feed generation
+disableKinds = ["RSS", "taxonomy", "term"]
+
+# Disable unused output formats
+[outputs]
+  home = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
