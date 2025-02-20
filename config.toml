@@ -49,6 +49,10 @@ enableEmoji = true
   [[module.mounts]]
     source = "static"
     target = "static"
+  [[module.mounts]]
+    source = "themes/hugo-bootstrap-theme/static"
+    target = "static"
+    excludeFiles = ["images/feather/**"]
 
 # Disable RSS feed generation
 disableKinds = ["RSS", "taxonomy", "term"]
