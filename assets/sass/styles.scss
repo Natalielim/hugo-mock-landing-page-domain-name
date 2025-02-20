@@ -59,7 +59,7 @@ h1,
 h2,
 h3 {
     font-family: 'New Century Schoolbook', serif;
-    font-weight: 500;
+    font-weight: 200;
     // letter-spacing: -0.02em;
 }
 
@@ -118,33 +118,39 @@ a {
     }
 }
 
-footer {
-    background: #000000 !important;
-    color: white;
-    padding: 2rem 0;
-
-    // Style links in footer
-    a {
-        color: var(--bd-light-red);
-
-        &:hover {
-            color: var(--bd-dark-red);
-            text-decoration: none;
-        }
+// Footer styling with comprehensive text handling
+footer, 
+.footer {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  
+  p, span, div {
+    color: #ffffff !important;
+  }
+  
+  a, 
+  .nav-link,
+  .text-muted {
+    color: #ffffff !important;
+    text-decoration: none;
+    
+    &:hover {
+      color: #cccccc !important;
+      text-decoration: underline;
     }
+  }
+  
+  // Override any Bootstrap text utilities
+  .text-dark,
+  .text-body,
+  .text-muted {
+    color: #ffffff !important;
+  }
+}
 
-    // Style footer headings if any
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: white;
-    }
-
-    // Add subtle border at top of footer
-    border-top: 1px solid rgba(var(--bd-dark-red-rgb), 0.2);
+footer.bg-light {
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
 
 // Typography
