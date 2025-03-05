@@ -28,7 +28,11 @@ jobs:
           extended: true
 
       - name: 🏗️ Compile Hugo Static Files
-        run: hugo -D --gc --minify
+        run: |
+          hugo --minify --gc \
+          --baseURL "https://natalielim.github.io/hugo-mock-landing-page-autodeployed/" \
+          --enableGitInfo \
+          --environment production
 
       - name: 🚀 Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3.9.3
