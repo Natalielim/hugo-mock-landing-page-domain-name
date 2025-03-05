@@ -1,4 +1,4 @@
-# hugo-mock-landing-page-autodeployed
+# hugo-mock-landing-page-domain-name
 
 # Stitched Social
 
