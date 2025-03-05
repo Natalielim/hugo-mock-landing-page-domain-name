@@ -6,7 +6,6 @@
 <!-- Custom CSS -->
 {{ $style := resources.Get "sass/styles.scss" | resources.ToCSS | resources.Minify }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
-<p>CSS File Path: {{ $style.RelPermalink }}</p>
 
 <!-- Load only specific icons -->
 <link href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css" rel="stylesheet"> 
