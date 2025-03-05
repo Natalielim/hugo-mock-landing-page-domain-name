@@ -30,7 +30,7 @@ jobs:
       - name: 🏗️ Compile Hugo Static Files
         run: |
           hugo --minify --gc \
-          --baseURL "https://natalielim.github.io/hugo-mock-landing-page-autodeployed/" \
+          --baseURL "https://natalielim.github.io/hugo-mock-landing-page-domain-name/" \
           --enableGitInfo \
           --environment production
 
